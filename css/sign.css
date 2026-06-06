@@ -1,0 +1,228 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    width:100%;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+header{
+    background-color: #5941a9;
+    padding: 10px;
+}
+.panel{
+    background-color: #5941a9;
+    width: 100vw;
+    height: 50px;
+}
+.anaSayfa{
+    font-size: 40px;
+    text-decoration: none;
+    color: #e5d4ed;
+}
+.anaSayfa:hover{
+    color: black;
+    transition: 0.8s ease;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.flex1{
+    flex: 2.5;
+}
+.flex2{
+    flex: 5;
+    background-color: #fff;
+    border:1px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(219, 219, 219, 0.5); /* Ufak bir yazım hatası vardı 00.5s yazıyordu, düzelttim */
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.flex3{
+    flex: 2.5;
+}
+.isimGrubu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.isimGrubu label{
+    font-size: 18px;
+    color:#710f80;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.isimGrubu input{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.isimGrubu input:focus{
+    border-bottom: 2px solid #00a884;
+}
+.soyadGrubu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.soyadGrubu label{
+    font-size: 18px;
+    color:#710f80;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.soyadGrubu input{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.soyadGrubu input:focus{
+    border-bottom: 2px solid #00a884;
+}
+.mailGrubu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.mailGrubu label{
+    font-size: 18px;
+    color:#710f80;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.mailGrubu input{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.mailGrubu input:focus{
+    border-bottom: 2px solid #00a884;
+}
+.şifreGrubu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.şifreGrubu label{
+    font-size: 18px;
+    color:#710f80;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.şifreGrubu input{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.şifreGrubu input:focus{
+    border-bottom: 2px solid #00a884;
+}
+.şifreGrubu2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.şifreGrubu2 label{
+    font-size: 18px;
+    color:#710f80;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.şifreGrubu2 input{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #0f0e0e;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.şifreGrubu2 input:focus{
+    border-bottom: 2px solid #290a49;
+}
+.maddeler ul{
+    color: gray;
+}
+.kayitGrubu{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.kayitGrubu button{
+    width: 50%;
+    height: 45px;
+    border-radius: 4px;
+    border: 0.5px solid;
+    background-color: #5941a9;
+    color: white; /* Yazı rengini beyaz yaptım daha okunaklı olsun diye */
+}
+.kayitGrubu button:hover{
+    background-color: #664d87;
+    transition: background-color 0.7s;
+}
+@media (max-width: 768px) {
+    .main { flex-direction: column; height: auto; overflow-y: auto; }
+    .flex1, .flex3 { display: none; }
+    .flex2 { flex: 1; margin: 10px; padding: 20px; overflow-y: auto; max-height: none; }
+    html, body { overflow: auto; height: auto; }
+}
+.sifre-geri-bildirim {
+    font-size: 14px;
+    margin-top: 6px;
+    display: block;
+    flex-direction: column;
+    align-items: left;
+}
+.kural {
+    padding: 2px 0;
+    color: #999;
+    transition: color 0.3s;
+}
+.kural.gecti { 
+    color: #16a34a;
+}
+.isimGrubu input.hata, .soyadGrubu input.hata,.mailGrubu input.hata,.şifreGrubu input.hata, .şifreGrubu2 input.hata {
+    border-bottom: 2px solid #dc2626 ;
+}
+.şifreGrubu2 input.eslesmiyor {
+    border-bottom: 2px solid #dc2626 !important;
+}
+.şifreGrubu2 input.eslesiyor {
+    border-bottom: 2px solid #16a34a !important;
+}

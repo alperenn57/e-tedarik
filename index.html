@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>project</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="">
+        <link rel="icon" type="image/png" href="assets/tokalasma.png">
+    </head>
+    <body>
+        <div id="yukleniyor-ekrani" class="loader-kapsayici">
+            <div class="spinner"></div>
+                <p style="margin-top: 0px; font-size: 18px; font-family: 'Trebuchet MS', Arial, sans-serif;">
+                    Giriş sayfasına yönlendiriliyorsunuz...
+                </p>
+        </div>
+
+        <div id="yukleniyor-ekrani2" class="loader-kapsayici">
+            <div class="spinner"></div>
+                <p style="margin-top: 0; font-size: 18px; font-family: 'Trebuchet MS', Arial, sans-serif;">Kayıt ekranına yönlendiriliyorsunuz.</p>
+        </div>
+        <div class="divBaslik">
+            <span class="span1Tedarik">E-Tedarik</span>
+            <span><button class="sgnButton" id="login" onclick="logBtn(event)">Log In</button></span>
+            <span><button class="sgnButton" id="signup" onclick="signBtn(event)">Sıgn Up</button></span>
+        </div>
+        <div class="hero-alani" id="hero">
+            <div class="hero-yazisi">
+                <h1 style ="color: #1D1128; text-decoration: underline; text-decoration-color: #514f59;" class="animationBaslik">E-Tedarik</h1>
+                <p style="text-align: center; color: #1D1128; font-size: 20px;" class="animationAltBaslik">Teklif ve İhale Yöntemi</p>
+                <button class="demo" id="demoButtonn" onclick="demoButton(event)">Demo Talebi</button>
+            </div>
+        </div>
+        <div class="alt-icerik">
+            <h2 class="temelBaslik">Neden Biz?</h2>
+            <p class="altKisim">Sahadaki operasyonel darboğazlardan yola çıkarak geliştirdiğimiz veri odaklı şeffaf altyapımızla, manuel tedarik süreçlerinin yarattığı gizli maliyetleri ve karmaşayı kalıcı olarak ortadan kaldırıyoruz.</p>
+            <!-- Sayfanın geri kalanı buraya gelecek -->
+        <div class="container">
+            <div class="flex1">
+                <h3>Daha <b style="color: #705e82;">Hızlı</b></h3>
+                Manuel yürütülen e-posta ve telefon trafiğini ortadan kaldırarak teklif toplama, karşılaştırma ve onay süreçlerini tek bir merkezde dijitalleştiriyoruz. Bu sayede operasyonel iş yükünü azaltıyor ve tedarik döngüsü süresini doğrudan kısaltıyoruz.
+            </div>
+            <div class="flex2">
+                <h3>Daha <b style="color: #705e82;">Kolay</b></h3>
+                Kargaşa yaratan Excel tablolarını ve dağınık e-posta zincirlerini tamamen ortadan kaldırıyoruz. Kullanıcı dostu arayüzümüz ve karşılaştırmalı analiz ekranlarımız sayesinde, gelen tüm teklifleri tek bir panelde yan yana görerek en doğru kararı saniyeler içinde verebilirsiniz.
+            </div> 
+            <div class="flex3">
+                <h3>Daha <b style="color: #705e82;">Düşük Maliyetler</b></h3>
+                Sistem üzerinden şeffaf bir rekabet ortamı yaratarak tedarikçilerinizden en iyi fiyatları almanızı sağlıyoruz. Aynı zamanda onaysız ve sistemsiz harcamaları (maverick spending) denetim altına alarak sadece ürün alımında değil, yönetim süreçlerinde de doğrudan maliyet avantajı yaratıyoruz.
+            </div>
+        </div>
+        <div>
+            <div><h2 class="temelBaslik">İş Verenler İçin E-Tedarik</h2></div>
+            <div class="altKisim">Sistemimiz sizin için satın alma sürecini altı adımda hızlandırır.</div>
+            <div class="subcontainer1">
+                <div class="subflex1">
+                    <h3>01</h3>
+                    <h4>Teklif toplama</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Belirlediğin tarihe kadar tedarikçilerden tekliflerini girmelerini bekle.</p>
+                </div>
+                <div class="subflex2">
+                    <h3>02</h3>
+                    <h4>Kıyaslama</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tedarikçilerin girdiği teklifi sistem üzerinden otomatik olarak kıyaslanır</p>
+
+                </div>
+                <div class="subflex3">
+                    <h3>03</h3>
+                    <h4>Karar Verme</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Kıyaslanmış teklifleri görerek en optimum kararı vermeni sağlar. </p>
+
+                </div>
+
+            </div>
+            <div class="subcontainer2">
+                <div class="subflex4">
+                    <h3>04</h3>
+                    <h4>Sipariş</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Satın alma kararınızı tedarikçinize sistem duyursun, iletişim tamamen sistem üzerinden yürütülsün.</p>
+                </div>
+                <div class="subflex5">
+                    <h3>05</h3>
+                    <h4>Değerlendirme</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Satın alma süreçleri tamamlandıkça tedarikçilerinizi değerlendirin.</p>
+                </div>
+                <div class="subflex6">
+                    <h3>06</h3>
+                    <h4>Raporlama</h4>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Satın alma geçmişinizi ve tedarikçi performanslarını analiz ederek gelecekteki bütçenizi optimize edin</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="temelBaslik">Tedarikçiler İçin E-Tedarik</h2>
+            <div class="subcontainer3">
+                <div class="subflex01">
+                    <h3>Yeni Müşteriler</h3>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Satış ağınızı genişleterek yeni kurumsal müşterilere doğrudan ulaşın. Sektörünüze uygun güncel ihalelerden anında haberdar olup iş hacminizi büyütün.</p>
+                </div>
+                <div class="subflex02">
+                    <h3>Teklif Verin</h3>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Tekliflerinizi şeffaf bir altyapıyla anında iletin; rekabet durumunu ve onay adımlarını tek ekrandan canlı olarak izleyin.</p>
+                </div>
+
+            </div>
+            <div class="subcontainer3">
+                <div class="subflex01">
+                    <h3>Kalitenizi Ölçün</h3>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Müşteri ihtiyaçlarını daha sağlıklı analiz edin.</p>
+                </div>
+                <div class="subflex02">
+                    <h3>Raporlayın</h3>
+                    <p style="color: #959595; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Verdiğiniz teklifleri ve müşteri ilişkilerinizi daha kolay raporlayın. </p>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    <div style="background:#1D1128; color:#e5cef8; text-align:center; padding:22px; font-family:'Trebuchet MS', Arial, sans-serif; margin-top:80px; margin-left: 0;">
+        <p style="margin:4px 0; font-size:15px;">📧 iletisim@etedarik.com.tr</p>
+        <p style="margin:4px 0; font-size:15px;">📞 +90 212 000 00 00</p>
+        <p style="margin:6px 0; font-size:12px; color:#9e89b8;">© 2026 E-Tedarik. Tüm hakları saklıdır.</p>
+    </div>
+    <div id="demoModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; justify-content:center; align-items:center;">
+        <div style="background:#fff; border-radius:12px; padding:32px; width:90%; max-width:420px; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+            <button onclick="document.getElementById('demoModal').style.display='none'" style="position:absolute; top:12px; right:16px; background:none; border:none; font-size:22px; cursor:pointer;">✕</button>
+            <h2 style="color:#261543; margin-bottom:6px;">Demo Talebi</h2>
+
+            <p style="color:gray; font-size:14px; margin-bottom:18px;">Zaten hesabınız var mı?
+                <a href="login.html" style="color:#5941a9;">Giriş yapın</a>
+            </p>
+            <div style="display:flex; flex-direction:column; gap:12px;">
+                <input id="demoAd" type="text" placeholder="Adınız Soyadınız" style="padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; outline:none;">
+                <input id="demoMail" type="email" placeholder="E-posta adresiniz" style="padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; outline:none;">
+                <input id="demoFirma" type="text" placeholder="Firma Adı" style="padding:10px; border:1px solid #ddd; border-radius:6px; font-size:14px; outline:none;">
+                <button onclick="demoGonder()" style="padding:12px; background:#5941a9; color:#fff; border:none; border-radius:6px; font-size:15px; cursor:pointer;">Demo Talep Gönder</button>
+            </div>
+            <div id="demoMesaj" style="margin-top:10px; color:green; font-size:13px; display:none;">✅ Talebiniz alındı, en kısa sürede dönüş yapacağız.</div>
+        </div>
+    </div>
+    <style>
+        @media (max-width: 768px) {
+            .divBaslik { flex-direction: column; gap: 8px; text-align: center; }
+            .container { flex-direction: column; }
+            .flex1, .flex2, .flex3 { flex: 1; }
+            .subcontainer1, .subcontainer2, .subcontainer3 { flex-direction: column; }
+            .subflex1,.subflex2,.subflex3,.subflex4,.subflex5,.subflex6 { width: 100%; }
+            .subflex01, .subflex02 { width: 100%; }
+            .hero-alani { padding: 20px; }
+        }
+    </style>
+    <script src="js/app.js"></script>
+    </body>
+    
+</html>

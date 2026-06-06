@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <title>Kayıt</title>
+        <link rel="icon" type="image/png" href="assets/tokalasma.png">
+        <link rel="stylesheet" href="css/sign.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="anaSayfa">E-Tedarik</a>
+        </header>
+            
+        <div class="main">
+            <!-- Sol boşluk -->
+            <div class="flex1"></div>
+            
+            <!-- Orta Form Alanı -->
+            <div class="flex2">
+                <div style="margin-bottom: 15px; font-weight: bold; color: #5941a9;">
+                    Lütfen gerekli bütün bilgileri doldurunuz. 
+                </div>
+                <form id="kayitFormu" action="php/sign.php" method="POST">
+                    <div class="isimGrubu">
+                        <label>Ad* :</label>      
+                        <input type="text" id="signAd" name="ad" required>
+                    </div>
+                    <div class="soyadGrubu">
+                        <label>Soyad* :</label>
+                        <input type="text" id="signSoyad" name="soyad" required>
+                    </div>
+                    <div class="mailGrubu">
+                        <label>E-mail* :</label>
+                        <input type="email" id="signMail" name="eposta" required>
+                    </div>
+                    <div class="şifreGrubu">
+                        <label>Şifre* :</label>
+                        <input type="password" id="signSifre" name="sifre" required>
+                    </div>
+                    <div class="sifre-geri-bildirim" id="sifreGeriBildirim">
+                        <div class="kural" id="kural-uzunluk">✗ En az 8 karakter olmalı</div>
+                        <div class="kural" id="kural-sayi">✗ Tamamıyla sayısal olamaz</div>
+                        <div class="kural" id="kural-ardisik">✗ Ardışık karakter olmamalı (örn: 123, abc)</div>
+                        <div class="kural" id="kural-bosluk">✗ Boşluk içeremez</div>
+                    </div>
+                    <div class="şifreGrubu2">
+                        <label>Şifre (tekrar)* :</label>
+                        <input type="password" id="signSifre2" required>
+                    </div>
+                    <div class="kayitGrubu">
+                        <button id="kayitBtn">Kaydol</button>
+                    </div>
+                </form>
+            </div> <!-- flex2 kutusu burada düzgünce kapandı -->
+
+            <!-- Sağ boşluk -->
+            <div class="flex3"></div>
+
+        </div>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/sign.js"></script>
+    </body>
+</html>

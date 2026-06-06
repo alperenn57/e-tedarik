@@ -1,0 +1,419 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.baslik{
+    color: #1d1128
+}
+
+.span1Tedarik{
+    font-family: 'Times New Roman', Times, serif;
+    color:#e5d4ed;
+    padding: 20px;
+    margin-right: auto;
+    font-size: 35px;
+
+    
+    
+}
+.animationBaslik{
+    animation: usttenDus 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes usttenDus {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.divBaslik{
+    height: 80px;
+    background-color: #5941a9;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    
+    
+}
+
+.sgnButton{
+    height: 50px;
+    width: 100px;
+    margin-top: 15px;
+    justify-content: flex-end;
+    margin-right: 5px;
+    font-family: fantasy;
+    font-size: 16px;
+    background-color: #6e34db;
+    
+    border-radius: 8px;
+    cursor: pointer;
+
+
+    transition: all 0.3s ease;
+}
+
+.sgnButton:hover {
+    width: 110px;
+    height: 55px;
+    background-color: #e5d4ed ;
+
+    transition: width 2s, height 2s, background-color 1s;
+}
+.hero-alani {
+  width: 100%;
+  height: 450px; 
+  
+  
+  background-image: url('../assets/tedarik.png'); 
+  background-size: cover; 
+  background-position: center; 
+  
+  
+  background-attachment: fixed; 
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-yazisi {
+  color: white;
+  font-size: 40px;
+  
+  padding: 20px 40px;
+  
+}
+
+.alt-icerik {
+  background-color: white; 
+  min-height: 1000px; 
+  padding: 50px;
+  position: relative;
+  z-index: 10; 
+}
+.animationAltBaslik{
+    
+    opacity: 0; 
+    animation: asagidanYukari 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.3s;
+}
+
+.demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #a0a4f9;
+    cursor: pointer;
+    margin-left: 100px;
+
+
+    
+    opacity: 0;
+    animation: asagidanYukari 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.6s;
+}
+@keyframes asagidanYukari {
+    0% {
+        opacity: 0;
+        transform: translateY(25px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+.demo:hover{
+    background-color: #5941a9;
+    transition: background-color 0.7s;
+}
+
+
+
+.alt-icerik{
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+    text-align: center;
+
+}
+
+.temelBaslik{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #1d1128;
+}
+.altKisim{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    max-width: 1200px; 
+    padding: 50px 20px;
+}
+.flex1, .flex2, .flex3 {
+    flex: 1; 
+    text-align: left; 
+            
+  
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+  
+.flex1 h3, .flex2 h3, .flex3 h3 {
+    border-bottom: 2px solid #8b38b2; 
+    padding-bottom: 15px; 
+    color: #1d1128; 
+}
+
+.flex1 p, .flex2 p, .flex3 p {
+    color: #666;
+    line-height: 1.7; 
+    font-size: 15px;
+}
+
+.flex1 {
+    animation: soldanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.flex2 {
+    animation: asagidanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.flex3 {
+    animation: sagdanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+        
+@keyframes soldanGiris {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+        
+@keyframes asagidanGiris {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes sagdanGiris {
+    from { opacity: 0; transform: translateX(100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.subcontainer1{
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    max-width: 1200px; 
+    padding: 50px 20px;
+
+}
+
+.subflex1, .subflex2, .subflex3 {
+    flex: 1; 
+    text-align: left; 
+            
+  
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+.subflex1 h3, .subflex2 h3, .subflex3 h3 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    color: #959595; 
+}
+.subflex1 h4, .subflex2 h4, .subflex3 h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0px;
+}
+.subflex1 {
+    animation: soldanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.subflex2 {
+    animation: asagidanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.subflex3 {
+    animation: sagdanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+
+
+
+.subcontainer2{
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    max-width: 1200px; 
+    padding: 50px 20px;
+    margin-top: 0px;
+}
+
+.subflex4, .subflex5, .subflex6 {
+    flex: 1; 
+    text-align: left; 
+            
+  
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+.subflex4 h3, .subflex5 h3, .subflex6 h3 {
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    color: #959595; 
+}
+.subflex4 h4, .subflex5 h4, .subflex6 h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0px;
+}
+.subflex4 {
+    animation: soldanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.subflex5 {
+    animation: asagidanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.subflex6 {
+    animation: sagdanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+
+
+
+
+
+
+.subcontainer3{
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    max-width: 1200px; 
+    padding: 50px 20px;
+    margin-top: 0px;
+}
+
+.subflex01, .subflex02 {
+    flex: 1; 
+    text-align: left; 
+            
+  
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+.subflex01 h3, .subflex02 h3 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    color: #959595; 
+}
+.subflex01 {
+    animation: soldanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.subflex02 {
+    animation: sagdanGiris 1s ease-out both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+
+
+.loader-kapsayici {
+    display: none; 
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: #261543; color: white;
+    z-index: 9999; 
+    flex-direction: column; justify-content: center; align-items: center;
+}
+.spinner {
+    width: 60px; height: 60px;
+    border: 6px solid #e3cefd; border-top: 6px solid transparent; 
+    border-radius: 50%;
+    animation: don 1s linear infinite;
+}
+@keyframes don { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-alani {
+        background-attachment: scroll;
+        background-position: top center;
+        height: 300px;
+    }
+    .demo {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+    .alt-icerik {
+        padding: 8%;
+    }
+    .temelBaslik {
+        font-size: 32px;
+    }
+    .container,
+    .subcontainer1,
+    .subcontainer2,
+    .subcontainer3 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+    .subflex1, .subflex2, .subflex3,
+    .subflex4, .subflex5, .subflex6,
+    .subflex01, .subflex02 {
+        width: 100%;
+    }
+    .divBaslik {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 0;
+    }
+    .span1Tedarik {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}

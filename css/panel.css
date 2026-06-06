@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+}
+.mobil-ust-bar {
+    display: none;
+    background-color: #261543;
+    color: white;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+.mobil-ust-bar h1 {
+    font-size: 20px;
+    margin: 0;
+}
+.mobil-menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+.anaKapsayici {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.sideBar {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1.5px solid #161414;
+    background-color: #261543;
+    flex-shrink: 0;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+.sideBar-ust {
+    display: flex;
+    flex-direction: column;
+}
+.kullanici-bilgi {
+    padding: 30px 20px;
+}
+.butonlar {
+    display: flex;
+    flex-direction: column;
+}
+.sideBar-alt {
+    padding: 20px;
+}
+.menuSekmeButonlari {
+    height: 50px;
+    border: solid 0.5px #cdcdcd;
+    border-radius: 3px;
+    background-color: #e3cefd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+.menuSekmeButonlari:hover {
+    background-color: #cab7f4;
+    transition: 0.3s;
+}
+.cikis-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+}
+.cikis-btn:hover {
+    background-color: #c9302c;
+}
+.icYapi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+    overflow-y: auto;
+}
+.talep-kutusu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.talep-formu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.talep-formu input, .talep-formu select {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    flex: 1;
+    min-width: 150px;
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+.talep-formu input:focus, .talep-formu select:focus {
+    border-bottom: 2px solid #261543;
+}
+.btn-gonder {
+    background-color: #261543;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-gonder:hover {
+    background-color: #584678;
+    transition: background-color 0.8s;
+}
+.liste-kutusu {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.talep-tablosu {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.talep-tablosu th, .talep-tablosu td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+.talep-tablosu th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.btn-teklif {
+    background-color: #e3cefd;
+    color: #261543;
+    border: 1px solid #261543;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-teklif:hover {
+    background-color: #261543;
+    color: white;
+}
+.reddedildi { color: red; }
+.onaylandi { color: greenyellow; }
+.beklemede { color: rgb(223, 199, 17); }
+.durum.aktif { color: green; font-weight: bold; }
+.durum.kapali { color: gray; font-weight: bold; }
+.eklenenler {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+@media (max-width: 768px) {
+    .mobil-ust-bar {
+        display: flex;
+    }
+    .sideBar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+    }
+    .sideBar.acik {
+        left: 0;
+    }
+    .menu-overlay.acik {
+        display: block;
+    }
+    .icYapi {
+        padding: 15px;
+        height: calc(100vh - 60px);
+    }
+    .talep-tablosu { font-size: 12px; }
+    .talep-tablosu th, .talep-tablosu td { padding: 8px 5px; }
+}
