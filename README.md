@@ -18,3 +18,9 @@ Bu proje, **Web Tabanlı Programlama** dersi için geliştirilmiş bir E-Tedarik
 * **Frontend:** HTML, CSS, JavaScript, Bootstrap
 * **Backend:** *PHP*
 * **Veritabanı:** *MySQL*
+
+## Proje Tasarımcıları
+
+* Alperen Ünal - 23360859061
+* Mahmut Donalı - 23360859063
+* Ayça Sarıca - 23360859052
