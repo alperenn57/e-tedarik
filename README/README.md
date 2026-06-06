@@ -49,9 +49,10 @@ Proje şu anda canlı sunucuda test edilebilir durumdadır.
 
 > *Not: Canlı test ortamında sunucu taraflı önbelleklemeler nedeniyle güncellemeleri görmek için Gizli Sekme kullanılması tavsiye edilir.*
 
-## 🧑‍💻 Geliştirici
+## 🧑‍💻 Geliştiriciler
 
-**Alperen**
-*Bursa Teknik Üniversitesi - Bilgisayar Mühendisliği*
-- UI/UX Dizaynı ve Full-Stack Geliştirme
+**Alperen Ünal 23360859061**
+**Mahmut Donalı 23360859063**
+**Ayça Sarıca 23360859052**
+
 
