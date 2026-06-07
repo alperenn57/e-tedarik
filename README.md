@@ -55,4 +55,8 @@ Proje şu anda canlı sunucuda test edilebilir durumdadır.
 **Mahmut Donalı 23360859063**
 **Ayça Sarıca 23360859052**
 
+##YouTube Linki 💻
+
+https://youtu.be/GZxCKQnaw6o
+
 
